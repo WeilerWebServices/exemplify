@@ -1,0 +1,29 @@
+/**
+ * Variables
+ */
+
+// Color
+$white: #fff;
+$black: #333;
+$red: #ff7676;
+$yellow: #f6f49d;
+$green: #5dae8B;
+$blue: #466c95;
+
+// Typography
+$slab: 'Arvo', serif;
+$sans: 'Open Sans', sans-serif;
+
+// Spacing
+$padding: 10px;
+
+// Shadows
+@mixin shadow($height) {
+  box-shadow: 1px 1px 4px $height rgba($black, 0.3);
+}
+@mixin sm-shadow() {
+  @include shadow(0px);
+}
+@mixin lg-shadow() {
+  @include shadow(2px);
+}
